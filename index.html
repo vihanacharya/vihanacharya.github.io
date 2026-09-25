@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vihan Acharya</title>
+<meta name="description" content="Vihan Acharya: NYU Tandon engineering student interested in finance, risk, and building things with code.">
+<style>
+  :root {
+    --bg: #fafaf7; --card: #ffffff; --text: #1c1c1e; --muted: #5f6368;
+    --accent: #57068c; --border: #e4e2dd; --tag: #f1ecf7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111114; --card: #1b1b20; --text: #ececf0; --muted: #a0a0aa;
+            --accent: #c9a3ff; --border: #2c2c33; --tag: #2a2235; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 56px 20px 80px; }
+  header h1 { font-size: 2.4rem; margin: 0 0 4px; letter-spacing: -0.02em; }
+  header p.sub { color: var(--muted); margin: 0 0 16px; font-size: 1.05rem; }
+  nav a { display: inline-block; margin: 0 14px 8px 0; color: var(--accent); text-decoration: none; font-weight: 600; }
+  nav a:hover { text-decoration: underline; }
+  h2 { font-size: 1.25rem; margin: 48px 0 14px; padding-bottom: 6px; border-bottom: 2px solid var(--border); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px;
+          text-decoration: none; color: inherit; display: flex; flex-direction: column; transition: transform .15s, border-color .15s; }
+  .card:hover { transform: translateY(-2px); border-color: var(--accent); }
+  .card h3 { margin: 0 0 6px; font-size: 1.02rem; }
+  .card p { margin: 0 0 12px; color: var(--muted); font-size: 0.93rem; flex: 1; }
+  .tags span { display: inline-block; background: var(--tag); color: var(--accent); border-radius: 999px;
+               padding: 2px 10px; font-size: 0.78rem; margin: 0 6px 6px 0; font-weight: 600; }
+  ul.plain { padding-left: 18px; margin: 0; }
+  ul.plain li { margin-bottom: 6px; }
+  footer { margin-top: 56px; color: var(--muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Vihan Acharya</h1>
+    <p class="sub">Engineering student at NYU Tandon. Interested in finance, risk, and building things with code.</p>
+    <nav>
+      <a href="mailto:vca2029@nyu.edu">Email</a>
+      <a href="https://github.com/vihanacharya">GitHub</a>
+      <a href="https://www.linkedin.com/in/vihanacharya">LinkedIn</a>
+      <a href="resume.pdf">Resume (PDF)</a>
+    </nav>
+  </header>
+
+  <h2>About</h2>
+  <p>I'm a first year at the NYU Tandon School of Engineering, planning to study mechanical engineering, with a strong interest in financial engineering, quantitative finance, and actuarial science. I also like racing and aerospace, and I've played tennis for 9 years.</p>
+  <p>Before college I founded Senior Tech Connect, a nonprofit that ran free tech help sessions at 7 senior centers and helped 300+ older adults, and I was VP of Research and Development for my school's DECA chapter, placing in the top 2% nationally in Stocks and Investment.</p>
+
+  <h2>Finance and Risk Projects</h2>
+  <div class="grid">
+    <a class="card" href="https://github.com/vihanacharya/finance-projects/tree/main/lumen-dcf-valuation">
+      <h3>Lumen Technologies DCF</h3>
+      <p>5 year unlevered DCF of LUMN with WACC, two terminal value methods, and sensitivity tables.</p>
+      <div class="tags"><span>Excel</span><span>Valuation</span></div></a>
+    <a class="card" href="https://github.com/vihanacharya/finance-projects/tree/main/stock-risk-analyzer">
+      <h3>Stock Risk and Return Analyzer</h3>
+      <p>Volatility, Sharpe ratio, beta, max drawdown, Value at Risk, and a moving average backtest.</p>
+      <div class="tags"><span>Python</span><span>pandas</span></div></a>
+    <a class="card" href="https://github.com/vihanacharya/finance-projects/tree/main/life-insurance-pricing">
+      <h3>Life Insurance Premium Calculator</h3>
+      <p>Prices whole life and term insurance with the SOA Standard Ultimate Life Table.</p>
+      <div class="tags"><span>Python</span><span>Actuarial</span></div></a>
+    <a class="card" href="https://github.com/vihanacharya/finance-projects/tree/main/option-pricing">
+      <h3>Option Pricing</h3>
+      <p>Black-Scholes formula vs. 100,000 path Monte Carlo simulation.</p>
+      <div class="tags"><span>Python</span><span>Quant</span></div></a>
+    <a class="card" href="https://github.com/vihanacharya/finance-projects/tree/main/portfolio-optimizer">
+      <h3>Portfolio Optimizer</h3>
+      <p>Efficient frontier with maximum Sharpe and minimum volatility portfolios.</p>
+      <div class="tags"><span>Python</span><span>Markowitz</span></div></a>
+    <a class="card" href="https://github.com/vihanacharya/finance-projects/tree/main/loan-amortization">
+      <h3>Loan Amortization Tool</h3>
+      <p>Monthly payment schedules and interest saved by paying extra.</p>
+      <div class="tags"><span>Python</span></div></a>
+  </div>
+
+  <h2>Just for Fun</h2>
+  <div class="grid">
+    <a class="card" href="https://github.com/vihanacharya/tennis-match-simulator">
+      <h3>Tennis Match Simulator</h3>
+      <p>Plays out 10,000 matches point by point to show how a small serving edge wins matches.</p>
+      <div class="tags"><span>Python</span><span>Monte Carlo</span></div></a>
+    <a class="card" href="https://github.com/vihanacharya/wordle-solver">
+      <h3>Wordle Solver</h3>
+      <p>Picks the most informative guess using entropy. Averages 3.1 guesses.</p>
+      <div class="tags"><span>Python</span><span>Information theory</span></div></a>
+    <a class="card" href="https://github.com/vihanacharya/tic-tac-toe-ai">
+      <h3>Unbeatable Tic Tac Toe</h3>
+      <p>Minimax with alpha-beta pruning, tested against every possible game.</p>
+      <div class="tags"><span>Python</span><span>Algorithms</span></div></a>
+  </div>
+
+  <h2>Education</h2>
+  <ul class="plain">
+    <li><strong>New York University, Tandon School of Engineering</strong>: B.S. Mechanical Engineering (intended), expected May 2030</li>
+    <li><strong>Summit High School</strong>, Summit, NJ: 3.7 unweighted GPA, 11 AP exams</li>
+  </ul>
+
+  <footer>Built with plain HTML and CSS, hosted on GitHub Pages.</footer>
+</main>
+</body>
+</html>
